@@ -51,7 +51,7 @@ const validarVersion = (req, res, next) => {
 
 server.post('/contactos', validarContacto, validarSiExiste, (req, res) => {
     contactos.push(req.body);
-    res.status(201).json({status: "OK", mensaje:"Contacto agregado", contacto: req.body});
+    res.status(201).json({status: "OK", mensaje:"Contacto agregado exitosamente", contacto: req.body});
 });
 
 server.get('/demo', validarVersion, (req, res) => {
