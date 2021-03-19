@@ -12,8 +12,9 @@ let personas = [
 ];
 
 validarIdPersona = (req, res, next) => {
-  const id = parseInt(req.params.id);
-  let resultado = personas.find((persona) => persona.id === id);
+
+const id = parseInt(req.params.id);
+let resultdado = personas.find((persona) => persona.id === id);
   if (resultado) {
     req.encontrado = resultado;
     next();
