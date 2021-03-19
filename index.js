@@ -74,7 +74,7 @@ server.use((err, req, res, next) => {
 });
 
 server.listen(3000, () => {
-    console.log('Servidor iniciado...');
+    console.log('Servidor iniciado..');
 });
 
 
