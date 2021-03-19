@@ -5,9 +5,10 @@ const server = express();
 server.use(express.json());
 
 let personas = [
-  { id: 1, nombre: 'Pepe', email: 'pepe@nada.com' },
+  { id: 1, nombre: 'luis', email: 'luis@nada.com' },
   { id: 2, nombre: 'Hugo', email: 'hugo@nada.com' },
-  { id: 3, nombre: 'Luis', email: 'juan@nada.com' },
+  { id: 3, nombre: 'Juan', email: 'juan@nada.com' },
+  { id: 4, nombre: 'Juli', email: 'juli@nada.com' },
 ];
 
 validarIdPersona = (req, res, next) => {
@@ -47,5 +48,5 @@ server.get('/personas', validarNombrePersona, (req, res) => {
 });
 
 server.listen(process.env.SERVER_PORT, () => {
-  console.log('Todo listo papá...');
+  console.log('All ready...');
 });
