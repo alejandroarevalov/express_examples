@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 
 let personas = [
-    { id: 1, nombre: 'Pepe', email: 'pepe@nada.com' },
+    { id: 1, nombre: 'Carlos', email: 'carlos@nada.com' },
     { id: 2, nombre: 'Hugo', email: 'hugo@nada.com' }, 
     { id: 3, nombre: 'Juan', email: 'juan@nada.com' }
 ]
