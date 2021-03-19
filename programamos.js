@@ -18,7 +18,7 @@ validarIdPersona = (req, res, next) => {
         req.encontrado = resultado;
         next();
     } else {
-        res.status(404).send({error: 'Persona no encontrada....'})
+        res.status(404).send({error: 'Persona no encontrada.'})
     }
 }
 
