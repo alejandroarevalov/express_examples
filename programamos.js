@@ -46,6 +46,6 @@ server.get('/personas', validarNombrePersona, (req, res) => {
 })
 
 server.listen(process.env.SERVER_PORT, () => {
-    console.log('Todo listo papá...')
+    console.log('All ready...')
 })
     
